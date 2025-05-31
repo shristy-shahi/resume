@@ -5,12 +5,12 @@ The Resume Screening App is a machine learning-powered web application that auto
 The project uses a K-Nearest Neighbors (KNN) or RandomForestClassifier model, achieving up to 99.76% accuracy with RandomForest. Text is processed using TF-IDF vectorization, and categories are mapped with a label encoder, all stored in pickle files (clf.pkl, tfidf.pkl, encoder.pkl).
 ✨ Features
 
-Resume Upload: Supports .pdf and .docx formats.
-Text Extraction: Uses pypdf for PDFs and python-docx for DOCX files.
-Text Preprocessing: Cleans text by removing URLs, hashtags, mentions, punctuation, and extra whitespace.
-Category Prediction: Predicts job categories using a trained ML model.
-Intuitive Interface: Streamlit-based web app with a user-friendly UI.
-Error Handling: Robust handling for file errors and unsupported formats.
+Resume Upload: Accepts .pdf and .docx formats with ease.  
+Text Extraction: Utilizes pypdf for PDFs and python-docx for DOCX files.  
+Text Preprocessing: Tidies up text by removing URLs, hashtags, mentions, punctuation, and extra spaces.  
+Category Prediction: Employs a trained ML model to forecast job categories.  
+Intuitive Interface: Features a Streamlit-based web app with a simple, user-friendly design.  
+Error Handling: Ensures robust management of file errors and unsupported formats.  
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 📁 Project Structure
 resume_tracker/
