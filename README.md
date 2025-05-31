@@ -123,14 +123,7 @@ Commit changes (git commit -m "Add feature").
 Push to the branch (git push origin feature-name).
 Open a pull request.
 
-Please follow the Code of Conduct and report issues via GitHub Issues.
-📜 License
-This project is licensed under the MIT License.
-📬 Contact
-For questions or feedback, contact:
 
-Your Name: your.email@example.com
-GitHub: your-username
 
 
 Built with ❤️ using Python and Streamlit
