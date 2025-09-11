@@ -57,7 +57,7 @@ pypdf==5.5.0
 scikit-learn==1.6.1
 pandas==2.2.3
 ```
-
+---
 ##📁 Project Structure
 
 resume_tracker/
@@ -70,40 +70,17 @@ resume_tracker/
 │   ├── start.ipynb         # Jupyter notebook for model training
 ├── requirements.txt         # Python dependencies
 └── README.md               # Project documentation
-
+---
 ##🛠️ Prerequisites
 
 Python: 3.12 or higher
 Virtual Environment: Recommended for dependency isolation
 Packages: Listed in requirements.txt
 Optional: Tesseract OCR for scanned PDFs (requires pytesseract)
-
-##🚀 Installation
-
-Clone the Repository:
-git clone https://github.com/your-username/resume_tracker.git
-cd resume_tracker
+---
 
 
-Create and Activate a Virtual Environment:
-python -m venv venv
-.\venv\Scripts\activate  # Windows
-# or
-source venv/bin/activate  # macOS/Linux
 
-
-Install Dependencies:
-pip install -r requirements.txt
-
-Contents of requirements.txt:
-streamlit==1.45.1
-python-docx==1.1.2
-pypdf==5.5.0
-scikit-learn==1.6.1
-pandas==2.2.3
-
-
-Verify Files:Ensure clf.pkl, tfidf.pkl, and encoder.pkl are in the src/ directory. Generate them by running notebooks/start.ipynb if needed.
 
 🎯 Usage
 
@@ -118,20 +95,11 @@ Upload a Resume:
 Upload a .pdf or .docx resume via the file uploader.
 The app extracts text and predicts the job category (e.g., "Data Science").
 Example output:The resume belongs to the category: Data Science
+---
 
 
 
 
-
-
-
-
-To use RandomForestClassifier:
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.multiclass import OneVsRestClassifier
-rf_model = OneVsRestClassifier(RandomForestClassifier())
-rf_model.fit(X_train, y_train)
-pickle.dump(rf_model, open('clf.pkl', 'wb'))
 
 ##🐛 Troubleshooting
 
@@ -144,7 +112,7 @@ PDF Extraction Issues:For scanned PDFs, install pdfplumber:pip install pdfplumbe
 Update app.py’s extract_text_from_pdf (see code comments).
 Model Compatibility:Run start.ipynb in the same environment.
 
-
+---
 
 ##🌟 Future Enhancements
 
@@ -154,10 +122,10 @@ Add confidence scores for predictions.
 Support OCR for scanned PDFs using pytesseract.
 Enhance UI with category descriptions and sidebar.
 Include job recommendation features.
-
+---
 ##🤝 Contributing
 Contributions are welcome! To contribute:
-
+---
 Fork the repository.
 Create a feature branch (git checkout -b feature-name).
 Commit changes (git commit -m "Add feature").
@@ -167,4 +135,4 @@ Open a pull request.
 
 
 
-Built with ❤️ using Python and Streamlit
+Built by ❤️ shristy
