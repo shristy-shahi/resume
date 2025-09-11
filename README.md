@@ -1,18 +1,65 @@
-Resume Screening App
+# 📄 Resume Screening App
 
-📋 Project Overview
-The Resume Screening App is a machine learning-powered web application that automatically classifies resumes into job categories such as Data Science, Health and Fitness, Network Security Engineer, and Advocate. Built with Streamlit, the app allows users to upload resumes in .pdf or .docx format, extracts text, preprocesses it, and predicts the appropriate category using a trained classifier.
-The project uses a K-Nearest Neighbors (KNN) or RandomForestClassifier model, achieving up to 99.76% accuracy with RandomForest. Text is processed using TF-IDF vectorization, and categories are mapped with a label encoder, all stored in pickle files (clf.pkl, tfidf.pkl, encoder.pkl).
-✨ Features
+A machine learning–based **resume classification web app** built with **Streamlit**.  
+Upload a resume in `.pdf` or `.docx` format, and the app will automatically analyze the content and predict the job category.  
 
-Resume Upload: Accepts .pdf and .docx formats with ease.  
-Text Extraction: Utilizes pypdf for PDFs and python-docx for DOCX files.  
-Text Preprocessing: Tidies up text by removing URLs, hashtags, mentions, punctuation, and extra spaces.  
-Category Prediction: Employs a trained ML model to forecast job categories.  
-Intuitive Interface: Features a Streamlit-based web app with a simple, user-friendly design.  
-Error Handling: Ensures robust management of file errors and unsupported formats.  
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-📁 Project Structure
+---
+
+## 📖 Overview
+This project helps recruiters, HR teams, and job portals by automatically classifying resumes into categories such as:
+- Data Science  
+- Network Security Engineer  
+- Advocate  
+- Health & Fitness  
+
+It uses natural language processing (NLP) techniques and trained ML models to achieve up to **99.7% accuracy**.  
+
+---
+
+## ✨ Features
+- 📂 Upload resumes in **PDF** or **DOCX** format  
+- 🧹 Cleans and preprocesses text (removes URLs, punctuation, stopwords, etc.)  
+- 🤖 Resume classification using ML models (KNN, RandomForest)  
+- 🎯 High accuracy (~99.7% with RandomForest)  
+- 💻 User-friendly **Streamlit web interface**  
+
+---
+
+## 🛠️ Tech Stack
+- **Python 3.8+**  
+- **Streamlit** – frontend web app  
+- **scikit-learn** – ML model training and evaluation  
+- **pypdf**, **python-docx** – resume parsing  
+- **Pickle** – model persistence  
+
+---
+
+## ⚡ Installation & Setup
+
+Clone the repository:
+```bash
+git clone https://github.com/shristy-shahi/resume.git
+cd resume
+Create and Activate a Virtual Environment:
+python -m venv venv
+.\venv\Scripts\activate  # Windows
+# or
+source venv/bin/activate  # macOS/Linux
+
+
+Install Dependencies:
+pip install -r requirements.txt
+
+Contents of requirements.txt:
+streamlit==1.45.1
+python-docx==1.1.2
+pypdf==5.5.0
+scikit-learn==1.6.1
+pandas==2.2.3
+```
+
+##📁 Project Structure
+
 resume_tracker/
 ├── src/
 │   ├── app.py              # Streamlit app script
@@ -24,14 +71,14 @@ resume_tracker/
 ├── requirements.txt         # Python dependencies
 └── README.md               # Project documentation
 
-🛠️ Prerequisites
+##🛠️ Prerequisites
 
 Python: 3.12 or higher
 Virtual Environment: Recommended for dependency isolation
 Packages: Listed in requirements.txt
 Optional: Tesseract OCR for scanned PDFs (requires pytesseract)
 
-🚀 Installation
+##🚀 Installation
 
 Clone the Repository:
 git clone https://github.com/your-username/resume_tracker.git
@@ -57,7 +104,6 @@ pandas==2.2.3
 
 
 Verify Files:Ensure clf.pkl, tfidf.pkl, and encoder.pkl are in the src/ directory. Generate them by running notebooks/start.ipynb if needed.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🎯 Usage
 
@@ -75,17 +121,8 @@ Example output:The resume belongs to the category: Data Science
 
 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🧠 Model Details
 
-Dataset: Labeled resumes from various job categories (see start.ipynb).
-Preprocessing: Text cleaning (URLs, hashtags, punctuation removal) and TF-IDF vectorization.
-Model: KNN or RandomForestClassifier (RandomForest: 99.76% accuracy).
-Files:
-clf.pkl: Trained classifier
-tfidf.pkl: TF-IDF vectorizer
-encoder.pkl: Label encoder
 
 
 
@@ -96,7 +133,7 @@ rf_model = OneVsRestClassifier(RandomForestClassifier())
 rf_model.fit(X_train, y_train)
 pickle.dump(rf_model, open('clf.pkl', 'wb'))
 
-🐛 Troubleshooting
+##🐛 Troubleshooting
 
 Import Errors:pip install python-docx pypdf streamlit scikit-learn pandas
 
@@ -107,14 +144,18 @@ PDF Extraction Issues:For scanned PDFs, install pdfplumber:pip install pdfplumbe
 Update app.py’s extract_text_from_pdf (see code comments).
 Model Compatibility:Run start.ipynb in the same environment.
 
-🌟 Future Enhancements
+
+
+##🌟 Future Enhancements
+
+
 
 Add confidence scores for predictions.
 Support OCR for scanned PDFs using pytesseract.
 Enhance UI with category descriptions and sidebar.
 Include job recommendation features.
 
-🤝 Contributing
+##🤝 Contributing
 Contributions are welcome! To contribute:
 
 Fork the repository.
