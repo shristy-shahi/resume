@@ -58,6 +58,8 @@ scikit-learn==1.6.1
 pandas==2.2.3
 ```
 ---
+
+
 ##📁 Project Structure
 
 resume_tracker/
@@ -70,7 +72,16 @@ resume_tracker/
 │   ├── start.ipynb         # Jupyter notebook for model training
 ├── requirements.txt         # Python dependencies
 └── README.md               # Project documentation
+
+
+
+
 ---
+
+
+
+
+
 ##🛠️ Prerequisites
 
 Python: 3.12 or higher
@@ -104,28 +115,28 @@ Example output:The resume belongs to the category: Data Science
 ##🐛 Troubleshooting
 
 Import Errors:pip install python-docx pypdf streamlit scikit-learn pandas
-
-
 Pickle File Errors:Ensure pickle files are in src/. Recreate them using start.ipynb.
 PDF Extraction Issues:For scanned PDFs, install pdfplumber:pip install pdfplumber
-
 Update app.py’s extract_text_from_pdf (see code comments).
 Model Compatibility:Run start.ipynb in the same environment.
 
 ---
 
+
+
 ##🌟 Future Enhancements
-
-
 
 Add confidence scores for predictions.
 Support OCR for scanned PDFs using pytesseract.
 Enhance UI with category descriptions and sidebar.
 Include job recommendation features.
+
 ---
+
+
 ##🤝 Contributing
 Contributions are welcome! To contribute:
----
+
 Fork the repository.
 Create a feature branch (git checkout -b feature-name).
 Commit changes (git commit -m "Add feature").
