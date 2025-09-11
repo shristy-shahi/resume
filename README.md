@@ -80,8 +80,6 @@ resume_tracker/
 
 
 
-
-
 ##🛠️ Prerequisites
 
 Python: 3.12 or higher
@@ -93,20 +91,7 @@ Optional: Tesseract OCR for scanned PDFs (requires pytesseract)
 
 
 
-🎯 Usage
 
-Run the App:
-cd src
-streamlit run app.py
-
-This opens a browser at http://localhost:8080.
-
-Upload a Resume:
-
-Upload a .pdf or .docx resume via the file uploader.
-The app extracts text and predicts the job category (e.g., "Data Science").
-Example output:The resume belongs to the category: Data Science
----
 
 
 
@@ -121,28 +106,6 @@ Update app.py’s extract_text_from_pdf (see code comments).
 Model Compatibility:Run start.ipynb in the same environment.
 
 ---
-
-
-
-##🌟 Future Enhancements
-
-Add confidence scores for predictions.
-Support OCR for scanned PDFs using pytesseract.
-Enhance UI with category descriptions and sidebar.
-Include job recommendation features.
-
----
-
-
-##🤝 Contributing
-Contributions are welcome! To contribute:
-
-Fork the repository.
-Create a feature branch (git checkout -b feature-name).
-Commit changes (git commit -m "Add feature").
-Push to the branch (git push origin feature-name).
-Open a pull request.
-
 
 
 
